@@ -1,0 +1,10 @@
+#skywalker
+target
+web/WEB-INF/classes
+web/WEB-INF/lib
+.settings
+#web/js
+web/js-source/.idea
+.classpath
+.project
+bin/
