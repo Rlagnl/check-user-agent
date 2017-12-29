@@ -4,6 +4,20 @@
 		<meta charset="utf-8" />
 		<title></title>
 		<script type="text/javascript" src="js-source/getUserAgentFunction.js"></script>
+		<script>
+			// 执行事件
+			if (window.attachEvent)  {
+			  	window.attachEvent("onload", initScript);
+			} else {
+				window.addEventListener("load", initScript, false); 
+			};
+			
+			function initScript() {
+				var USER_AGENT = getUserAgentFunction();
+				document.getElementById("isIos").value = USER_AGENT.isIos;
+				document.getElementById("isAndroid").value = USER_AGENT.isAndroid;
+			};
+		</script>
 	</head>
 	<body>
 		Hello World!!!
@@ -14,19 +28,5 @@
 		</div>
 		
 	</body>
-	<script>
-		// 执行事件
-		if (window.attachEvent)  {
-		  	window.attachEvent("onload", initScript);
-		} else {
-			window.addEventListener("load", initScript, false); 
-		};
-		
-		function initScript() {
-			var USER_AGENT = getUserAgentFunction();
-			alert(USER_AGENT.isIos);
-			document.getElementById("isIos").value = USER_AGENT.isIos;
-			document.getElementById("isAndroid").value = USER_AGENT.isAndroid;
-		};
-	</script>
+	
 </html>
