@@ -16,6 +16,10 @@ var getUserAgentFunction = function() {
     if (ua.indexOf("Chrome") >= 0) {
 	    uaInfo.isChrome = true;
 	};
+	//判断Safari
+    if (ua.indexOf("Safari") >= 0) {
+	    uaInfo.isSafari = true;
+	};
 	//以下是获取OS版本信息
     var uaindex;
     if (uaInfo.isIos) {
