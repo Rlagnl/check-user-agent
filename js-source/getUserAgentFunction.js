@@ -9,8 +9,10 @@ var getUserAgentFunction = function() {
 	    uaInfo.isAndroid = true;
 	} else if(ua.indexOf("iPhone") > -1){
 	    uaInfo.isIos = true;
+	    uaInfo.isIPhone = true;
 	} else if(ua.indexOf("iPad") > -1) {
 	    uaInfo.isIos = true;
+	    uaInfo.isIPad = true;
 	};
 	//判断谷歌浏览器
     if (ua.indexOf("Chrome") >= 0) {
