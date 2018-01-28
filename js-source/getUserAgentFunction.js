@@ -22,6 +22,10 @@ var getUserAgentFunction = function() {
     if (ua.indexOf("Safari") >= 0) {
 	    uaInfo.isSafari = true;
 	};
+	// Edge
+	if (ua.indexOf("Edge") >= 0) {
+	    uaInfo.isEdge = true;
+	};
 	//以下是获取OS版本信息
     var uaindex;
     if (uaInfo.isIos) {
