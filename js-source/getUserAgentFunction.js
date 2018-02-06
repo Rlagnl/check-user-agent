@@ -22,6 +22,10 @@ var getUserAgentFunction = function() {
     if (ua.indexOf("Safari") >= 0) {
 	    uaInfo.isSafari = true;
 	};
+	// IE11
+	if (ua.indexOf("; rv:11.") >= 0) {
+	    uaInfo.isIE11 = true;
+	};
 	// Edge
 	if (ua.indexOf("Edge") >= 0) {
 	    uaInfo.isEdge = true;
