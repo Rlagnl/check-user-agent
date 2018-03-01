@@ -34,6 +34,10 @@ var getUserAgentFunction = function() {
 	if (ua.indexOf("Edge") >= 0) {
 	    uaInfo.isEdge = true;
 	};
+	// Firefox
+	if (ua.indexOf("Firefox") >= 0) {
+	    uaInfo.isFirefox = true;
+	};
 	//以下是获取OS版本信息
     var uaindex;
     if (uaInfo.isIos) {
