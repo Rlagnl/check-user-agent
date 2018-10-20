@@ -7,9 +7,9 @@
 		<script type="text/javascript" src="js-source/getUserAgentFunction.js"></script>
 		<script>
 			// 执行事件
-			if (window.attachEvent)  {
+			if (window.attachEvent)  { // IE
 			  	window.attachEvent("onload", initScript);
-			} else {
+			} else { // chrome
 				window.addEventListener("load", initScript, false); 
 			};
 			
